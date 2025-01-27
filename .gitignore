@@ -45,3 +45,6 @@ next-env.d.ts
 selenium-screenshot*
 
 activate.txt
+
+log.html
+report.html
