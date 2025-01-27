@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.10.4 on win32)" generated="2025-01-28T00:06:31.916133" rpa="false" schemaversion="5">
+<suite id="s1" name="Simple Test" source="C:\Users\rikun\framecove\tests\simple_test.robot">
+<test id="s1-t1" name="Verify Home Page" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-28T00:06:32.250275" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-28T00:06:32.250275" elapsed="2.202198"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-01-28T00:06:34.452473" elapsed="0.000999"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Home</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-01-28T00:06:34.453472" elapsed="0.520501"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-28T00:06:34.973973" elapsed="2.568372"/>
+</kw>
+<doc>Opens the home page and checks if FrameCove is displayed.</doc>
+<status status="PASS" start="2025-01-28T00:06:32.248274" elapsed="5.295094"/>
+</test>
+<status status="PASS" start="2025-01-28T00:06:31.918132" elapsed="5.627227"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Simple Test" id="s1" pass="1" fail="0" skip="0">Simple Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
