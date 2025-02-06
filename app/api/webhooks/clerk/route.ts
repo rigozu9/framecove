@@ -1,4 +1,4 @@
-import { createClerkClient } from '@clerk/backend';
+import { createClerkClient } from "@clerk/backend";
 import { WebhookEvent } from "@clerk/nextjs/server";
 import { headers } from "next/headers";
 import { NextResponse } from "next/server";
@@ -15,9 +15,7 @@ export async function POST(req: Request) {
   const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET;
 
   if (!WEBHOOK_SECRET) {
-    throw new Error(
-      "Please add WEBHOOK_SECRET from Clerk Dashboard to .env or .env.local"
-    );
+    throw new Error("Please add WEBHOOK_SECRET from Clerk Dashboard to .env or .env.local");
   }
 
   const headerPayload = await headers(); // Await the headers
@@ -55,8 +53,7 @@ export async function POST(req: Request) {
   const eventType = evt.type;
   // CREATE
   if (eventType === "user.created") {
-    const { id, email_addresses, image_url, first_name, last_name, username } =
-      evt.data;
+    const { id, email_addresses, image_url, first_name, last_name, username } = evt.data;
 
     const user = {
       clerkId: id,

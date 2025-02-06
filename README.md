@@ -7,26 +7,32 @@
 ## 🚀 Features
 
 - **🖼️ Image Restore**
+
   - Revive old or damaged photos using AI-powered restoration.
   - Fix scratches, enhance colors, and bring images back to life.
 
 - **✨ Generative Fill**
+
   - Seamlessly fill missing areas or extend backgrounds with AI.
   - Generate content matching the image’s style and context.
 
 - **🗑️ Object Remove**
+
   - Remove unwanted objects or people from photos easily.
   - Achieve clean results while preserving the background.
 
 - **🎨 Object Recolor**
+
   - Change the color of objects within your images.
   - Experiment with shades and tones to create unique visuals.
 
 - **📷 Background Remove**
+
   - Precisely remove or replace image backgrounds.
   - Perfect for product photos, professional headshots, or creative designs.
 
 - **👤 Profile**
+
   - Manage your account, view editing history, and access saved projects.
 
 - **💳 Buy Credits**

@@ -8,7 +8,7 @@ import "./globals.css";
 const IBMPlex = IBM_Plex_Sans({
   variable: "--font-ibm-plex-sans",
   subsets: ["latin"],
-  weight: ['400', '500', '600', '700']
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -24,9 +24,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={cn("font-IBMPlex-antialiased", IBMPlex.variable)}>
-          {children}
-        </body>
+        <body className={cn("font-IBMPlex-antialiased", IBMPlex.variable)}>{children}</body>
       </html>
     </ClerkProvider>
   );
