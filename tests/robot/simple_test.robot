@@ -12,5 +12,5 @@ Verify Home Page
     [Documentation]    Opens the home page and checks if FrameCove is displayed.
     Open Browser    ${BASE_URL}    ${BROWSER}
     Set Selenium Speed    ${DELAY}
-    Wait Until Page Contains    Home  # Replace with text visible on your homepage
+    Wait Until Page Contains    Home
     Close Browser
