@@ -11,6 +11,7 @@ const IBMPlex = IBM_Plex_Sans({
   weight: ['400', '500', '600', '700']
 });
 
+// yo
 export const metadata: Metadata = {
   title: "Framecove",
   description: "AI-powered image editor",
