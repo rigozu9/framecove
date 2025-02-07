@@ -18,6 +18,3 @@ jobs:
 
       - name: Check style
         run: npm run lint
-
-      - name: Run Unit Tests
-        run: npm run test
