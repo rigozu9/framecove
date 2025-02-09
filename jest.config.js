@@ -12,6 +12,11 @@ module.exports = {
   testPathIgnorePatterns: ["/node_modules/", "/.next/"],
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   transformIgnorePatterns: [
-    "/node_modules/(?!(@radix-ui|class-variance-authority|lucide-react)/)"
-  ]
+    "/node_modules/(?!(react|@radix-ui|class-variance-authority|lucide-react)/)"
+  ],
+  globals: {
+    "ts-jest": {
+      useESM: true
+    }
+  }
 };
