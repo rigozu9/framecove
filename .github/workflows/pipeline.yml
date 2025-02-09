@@ -15,9 +15,9 @@ jobs:
           node-version: "20"
       - name: Install dependencies
         run: npm install
-      - name: Clear Jest Cache
-        run: npx jest --clearCache
       - name: Check style
         run: npm run lint
-      - name: Run Tests with Verbose Logging
-        run: npm run test -- --verbose
+      - name: Run Tests
+        run: npm run test
+      - name: Trigger deployment
+        run: curl ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
