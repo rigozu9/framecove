@@ -3,7 +3,7 @@ module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'jsdom',
   transform: {
-    "^.+\\.(ts|tsx)$": ["ts-jest", { isolatedModules: true }]
+    "^.+\\.(ts|tsx)$": ["@swc/jest"] // ✅ Use SWC instead of ts-jest for faster builds
   },
   moduleNameMapper: {
     "^@/(.*)$": "<rootDir>/$1"
