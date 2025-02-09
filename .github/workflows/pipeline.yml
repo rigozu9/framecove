@@ -28,6 +28,11 @@ jobs:
       - name: Trigger deployment
         if: ${{ github.event_name == 'push' && env.SKIP_CONDITION != 'true'}}
         run: curl ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+      - name: Discord Webhook Notify for deployment
+        uses: sarisia/actions-status-discord@v1
+        if: ${{ success() }}
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
 
   tag_release:
     needs: [simple_deployment_pipeline]
