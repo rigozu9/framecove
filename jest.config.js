@@ -1,14 +1,17 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} */
 module.exports = {
-  preset: 'ts-jest',                           
-  testEnvironment: 'jsdom',                    
+  preset: 'ts-jest',
+  testEnvironment: 'jsdom',
   transform: {
-    "^.+\\.tsx?$": ["ts-jest", { isolatedModules: true }]
+    "^.+\\.(ts|tsx)$": ["ts-jest", { isolatedModules: true }]
   },
   moduleNameMapper: {
-    "^@/(.*)$": "<rootDir>/$1"                 
+    "^@/(.*)$": "<rootDir>/$1"
   },
-  setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"], 
+  setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
   testPathIgnorePatterns: ["/node_modules/", "/.next/"],
-  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"]
+  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
+  transformIgnorePatterns: [
+    "/node_modules/(?!(@radix-ui|class-variance-authority|lucide-react)/)"
+  ]
 };
